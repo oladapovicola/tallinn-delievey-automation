@@ -9,7 +9,7 @@ const randomPassword= faker.internet.password();
 
 const appUrl = process.env.APP_URL;
 
-test.only('Sign-in button is enabled', async ({ page }) => {
+test.only('Sign-in button is Enabled', async ({ page }) => {
   await page.goto(appUrl);
   await page.getByTestId('username-input').fill ('randomUsername');
   await page.getByTestId('password-input').fill ('randomPassword');
